@@ -8,13 +8,6 @@ import (
 	"strings"
 )
 
-func main() {
-	operacion := readInput()
-	operador := readInput()
-	c := calculator{}
-	fmt.Println(c.operate(operacion, operador))
-}
-
 type calculator struct{}
 
 // 1st part beteween () makes this func a 'Reciever function'
@@ -44,7 +37,7 @@ func parsear(input string) int {
 	return valor
 }
 
-func readInput() string {
+func ReadInput() string {
 	scanner := bufio.NewScanner(os.Stdin)
 	scanner.Scan()
 	return scanner.Text()
