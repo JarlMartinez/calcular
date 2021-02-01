@@ -8,7 +8,7 @@ import (
 	"strings"
 )
 
-type calculator struct{}
+type Calculator struct{}
 
 // 1st part beteween () makes this func a 'Reciever function'
 // which means that the 'struct' now has this function inside.
