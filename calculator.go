@@ -12,7 +12,7 @@ type Calculator struct{}
 
 // 1st part beteween () makes this func a 'Reciever function'
 // which means that the 'struct' now has this function inside.
-func (calculator) operate(input string, operator string) int {
+func (Calculator) Operate(input string, operator string) int {
 	cleanInput := strings.Split(input, operator)
 	value1 := parsear(cleanInput[0])
 	value2 := parsear(cleanInput[1])
